@@ -9,7 +9,6 @@ App.defaultProps = {
 }
 
 function App(prop) {
-  console.log(prop)
   return (
     <main className='App'>
       <header className='App-header'>
@@ -17,7 +16,6 @@ function App(prop) {
       </header>
       <div className='App-list'>
         {prop.store.lists.map(list => {
-          console.log(list);
           return (
           <List
           key= {list.id}
